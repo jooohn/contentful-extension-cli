@@ -186,7 +186,7 @@ const client = cli.createClient({
 client.getAll().then(function (extensions) {});
 
 // getting a single extension
-client.get(extensionIs).then(function (extension) {});
+client.get(extensionId).then(function (extension) {});
 
 // save method takes an object of extension properties described above
 client.save({
@@ -213,5 +213,5 @@ client.save({
 }).then(function (savedExtension) {});
 
 // delete method also requires a version number
-client.delete(extensionIs, currentExtensionVersion).then(function () {});
+client.delete(extensionId, currentExtensionVersion).then(function () {});
 ```
